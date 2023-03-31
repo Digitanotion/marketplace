@@ -1,0 +1,120 @@
+.mainchat{
+    overflow-y: auto;
+    max-height: 60%;
+    min-height: 300px;
+}
+.chat-each{
+
+}
+.digi{
+    margin-left: 5vw;
+}
+.machine{
+    margin-left: 5vw;
+}
+.reply{
+    margin-left: 5vw;
+}
+.messageimg{
+    width: 20vw;
+    height: 20vh;
+}
+.mainsection{
+    width: 100%;
+}
+.messagetext{
+    color: blue;
+}
+.fa-user-circle{
+     color: blue;
+}
+.flagicon{
+    border: 1px solid grey;
+    width: 4vw;
+    height: 6vh;
+}
+.phonenum{
+    color: white;
+}
+.my-reply{
+    max-width: 80%;
+    color: white;
+}
+.user-reply{
+        max-width: 80%;
+        text-align: left;
+}
+.inputWH{
+    max-height: 50px;
+}
+.sender{
+    max-height: 100px;
+}
+.hisreply{
+    width: 12vw;
+}
+.yestext{
+    width: 6vw;
+}
+.fromyoutext{
+    width: 15vw;
+}
+.numtext{
+    width: 10vw;
+}
+.chattext{
+    width: 20vw;
+}
+@media only screen and (max-width: 480px){
+    .digi{
+        margin-left: 20%;
+    }
+    .reply{
+        margin-left: 20%;
+    }
+    .machine{
+        margin-left: 20%;
+    }
+    .numtext{
+        width: 30vw;
+    }
+   
+    .hisreply{
+        width: 30%;
+    }
+    .fromyoutext{
+        width: 30%;
+    }
+    .yestext{
+        width: 10%;
+    }
+    .chattext{
+        width: 40%;
+    }
+    .flagicon{
+        width: 12vw;
+    }
+    
+}
+@media only screen and (min-width: 768px){
+    .digi{
+        margin-left: 35%;
+    }
+    .reply{
+        margin-left: 35%;
+    }
+    .machine{
+        margin-left: 35%;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .digi{
+        margin-left: 22%;
+    }
+    .reply{
+        margin-left: 22%;
+    }
+    .machine{
+        margin-left: 22%;
+    }
+}

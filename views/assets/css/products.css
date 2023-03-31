@@ -1,0 +1,110 @@
+/* SIDE BAR COMPONENT */
+.ha-price_side_text{
+    font-weight:900;
+    font-family: 'Inter Bold';
+    font-size: calc(2em + 1.2vh);
+}
+.ha-seller__avatar__wrapper {
+    display: flex;
+    margin-bottom: 8px;
+}
+.ha-seller__icon{
+    min-width: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    margin-right: 16px;
+    background-color: #fff;
+    position: relative;
+}
+.ha-seller__name {
+    font-family: 'Inter Bold';
+    line-height: 24px;
+    color: #303a4b;
+    margin-bottom: 4px;
+}
+.ha-seller-status {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #d0dadd;
+    position: absolute;
+    right: -1px;
+    top: -3px;
+}
+
+.ha-sim-ad-pic__wrapper{
+    height: 200px;
+    border-radius: 20%;
+}
+.ha-sim-ad-img__item{
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+.ha-sim-ad-item__title{
+    position: absolute;
+    left: 0;
+    top:38%;
+    background-color: rgba(0, 0, 0, 0.431);
+    width: 100%;
+}
+
+/* Ad Product Image Carousel */
+.ha-picture__wrapper .carousel-inner{
+    height: 500px; 
+    width: 100%;
+    column-gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .ha-picture__wrapper .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+}
+#adImageCarousel .carousel-indicators {
+    position: static;
+}
+
+#adImageCarousel .carousel-indicators>li {
+    width:fit-content;
+}
+
+#adImageCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5
+}
+
+#adImageCarousel .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#adImageCarousel .carousel-indicators li:hover img {
+    opacity: 0.75
+}
+
+/* Ad Product Image Carousel */
+@media only screen
+/* MOBILE SCREENS */
+and (max-width: 567px){
+    .ha-sim-ad-pic__wrapper{
+        height: 150px;
+    }
+    .ha-picture__wrapper .carousel-inner img {
+        object-fit: contain;
+        object-position: center center;
+    }
+}
+@media (max-width: 952px){
+   
+  }
+  @media (max-width: 858px){
+    .ha-sim-ad-item__desc{
+        display: none;
+    }
+  }

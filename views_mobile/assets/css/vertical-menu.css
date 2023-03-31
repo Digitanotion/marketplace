@@ -1,0 +1,100 @@
+
+#accordian {
+  width: 100%;
+  padding: 0px;
+  color: white;
+  margin: 0 auto 0 auto;
+}
+
+#accordian h3 {
+  padding-top: 8px;
+  padding-bottom: 3px;
+}
+
+#accordian h3 a {
+  font-size: calc(0.71rem + 0.2vw)!important;
+  font-weight: bold;
+  display: block;
+  color: black;
+  padding-left: 10px;
+  text-decoration: none;
+}
+#accordian h3 label{
+  font-size: 11px;
+  display:block;
+  padding-left: 40px;
+  border-bottom-right-radius:.40rem!important;
+  border-bottom-left-radius:.40rem!important;
+  line-height: 20px;
+  color: black;
+}
+#accordian ul li{
+  padding-left: 8px;
+}
+
+#accordian ul li:hover {
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+  background-color: rgba(208, 216, 235, 0.3);
+}
+
+i {
+  margin-right: 10px;
+}
+
+#accordian li {
+  list-style-type: none;
+ 
+}
+#accordian ul{
+  margin: 0;
+  padding:0;
+}
+
+#accordian ul ul li a,
+#accordian h4 {
+  color: black;
+  
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 27px;
+  display: block;
+  transition: all 0.15s;
+  position: relative;
+}
+#accordian ul ul li a{
+  background: #cce8ff;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  border-left: 5px solid rgb(35, 0, 163);
+}
+
+#accordian ul ul li a:hover {
+  background: #e3f2ff;
+  border-left: 5px solid rgb(35, 0, 163);
+}
+
+#accordian ul ul {
+  display: none;
+}
+
+#accordian li.active>ul {
+  display: block;
+}
+
+#accordian ul ul ul {
+  margin-left: 15px;
+  border-left: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+#accordian a:not(:only-child):after {
+  content: "";
+  font-family: fontawesome;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 14px;
+}
+
+#accordian .active>a:not(:only-child):after {
+  content: "\f107";
+}

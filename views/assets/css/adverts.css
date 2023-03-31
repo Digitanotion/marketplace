@@ -1,0 +1,46 @@
+.buttns0{
+    display: none;
+    border: 0;
+    border-radius: 2px;
+    color: lightblue;
+    font-size: medium;
+    font-weight: bolder;
+}
+.feedsico{
+    display: none;
+}
+.buttns01{
+    display: inline-block;
+}
+.fedes0{
+    background-color: lightblue;
+}
+.fedes1{
+    background-color: white;
+}
+.acts0{
+    background-color: lightblue;
+}
+.number_0{
+    display: block;
+}
+.phone_0{
+    display: none;
+}
+.call_0{
+    display: none;
+}
+.info_0{
+    display: none;
+}
+.click_0{
+    display: none;
+}
+.add_0{
+    border-radius: 50%;
+}
+
+  .ha-message__contents{
+      max-height: 500px;
+      position: relative;
+  }

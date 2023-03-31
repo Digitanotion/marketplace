@@ -1,0 +1,54 @@
+
+.gaiijincolumn{
+    color: white;
+    width: 100%;
+}
+.gaiijincolumn__text{
+    font-family: 'Roboto';
+    margin-top: 20%;
+}
+.gaiijincolumn__text-no--scroll{
+    margin-top: 3%;
+}
+.gaiijincolumn__text-small--scroll{
+    margin-top: 5%;
+}
+.gaiijincolumn__logopic{
+    width: 55%;
+}
+.signindetails{
+    padding: 13% 8% 13% 8%;
+    border-style: none;
+    height: 100%;
+}
+#signindetails__emoji{
+   width: 8%;
+   margin-bottom: 4%;
+}
+.btn-signindetails{
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    margin-top: 4%;
+}
+.signup{
+    padding: var(--padding);
+}
+.elipse_class{
+    position: absolute;
+    right: -4%;
+    top: -1%;
+    width: 27%;
+}
+.elipse_class--1{
+    position: absolute;
+    right: 8%;
+    bottom: 0%;
+    width: 27%;
+}
+.elipse_class--2{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 24%;
+}

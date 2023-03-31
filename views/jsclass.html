@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div id="myAnswer">Click the button below to calculate the answer</div>
+    <button onclick="getAnswer()">Calculate Now</button>
+    <button onclick="doIFStatement()">Do IF Statement</button>
+    <button onclick="doSwitchStatement()">Do Switch Statement</button>
+    <button onclick="doLoop()">Do loop now</button>
+    <script>
+
+       /*  function calculate(){
+            let x,y,ans;
+            x=10;
+            y=10;
+            ans=x*y;
+            document.getElementById("myAnswer").innerHTML="The answer is "+ans;
+        } */
+        function calcultewithParams(x,y){
+            let ans;
+            ans=x*y;
+            return ans;
+        }
+        function getAnswer(){
+            let ansFromCalFunction;
+            ansFromCalFunction=calcultewithParams(10,7);
+            alert (ansFromCalFunction);
+        }
+        var carType="Hondd";
+        function doIFStatement(){
+            if (carType=="Toyota"){
+                alert("Your car is "+ carType);
+            }
+            else if (carType=="Honda"){
+                alert("Your car is "+ carType)
+            }
+            else{
+                alert("Oops! Wrong Car. ")
+            }
+        }
+
+        function doSwitchStatement(){
+            switch (carType){
+                case "Toyota":
+                    alert("Your car is "+ carType);
+                    break;
+                case "Honda":
+                    alert("Your car is "+ carType);
+                    break;
+                default:
+                    alert("Oops! Wrong Car. ")
+                    break;
+            }
+        }
+
+        function doLoop(){
+            for (let count = 0; count < 10; count++) {
+                document.write(count*2+"<br>");
+            }
+        }
+      
+    </script>
+</body>
+</html>

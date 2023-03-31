@@ -1,0 +1,106 @@
+.ha-categ-content__sidebar ul{
+ background-color: red;
+}
+.ha-subcategories__list li{
+    color: black;
+    margin-left: 8px;
+    line-height: 20px;
+}
+.ha-category-locate__arrow{
+    position:absolute;
+    right: 0;
+    bottom: 35%;
+}
+.ha-category-filter{
+    
+}
+.ha-category-filter__body .form-check{
+    margin-bottom: 8px;
+}
+.ha-category-filter__body{
+    max-height: 250px;
+    overflow-y:hidden;
+}
+.ha-category-filter__body:hover{
+    overflow-y:auto;
+}
+.ha-category-locate-modal__arrow{
+    position:absolute;
+    right: 0;
+    bottom: 15%;
+}
+.ha-category-locate,.ha-category-filter__header,.ha-category-filter__body .form-check{
+    cursor: pointer;
+}
+.ha-category-filter__arrow{
+    position:absolute;
+    right: 0;
+    bottom: 25%;
+    font-weight:100 !important;
+    cursor: pointer;
+}
+.input-group-text{
+    background-color: transparent !important;
+    border-right: none !important;
+}
+label mark{
+    background: transparent !important;
+    color: #000;
+    padding: 0;
+}
+.ha-category-items__wrapper{
+    height: 200px;
+    border-radius: 20%;
+}
+.ha-category-item__image{
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    background-color: transparent;
+}
+.ha-category-item__title{
+    position: absolute;
+    left: 0;
+    top:38%;
+    background-color: rgba(0, 0, 0, 0.431);
+    width: 100%;
+}
+.ha-category-sort-value__select{
+    cursor: pointer;
+    position: relative;
+    width: 120px;
+}
+.ha-category-sort__list{
+    position: absolute;
+    width: 100%;
+    font-family: 'Inter Light BETA';
+    width: 100%;
+    font-size: 12px;
+    display: none;
+}
+.ha-category-sort__list ul, .ha-category-sort__list ul li{
+    margin: 0;
+    padding: 0;
+}
+.ha-category-sort__list ul li{
+    padding:4px 4px 4px 8px;
+}
+.ha-category-sort__list ul li:hover{
+    background-color: rgba(0, 0, 0, 0.062);
+}
+
+@media only screen
+/* MOBILE SCREENS */
+and (max-width: 567px){
+  .ha-category-filter__body{
+    overflow: auto;
+  }
+  .ha-category-items__wrapper{
+    max-height: 150px;
+}
+}
+    @media (max-width: 858px){
+        .ha-category-item__desc{
+            display: none;
+        }
+      }

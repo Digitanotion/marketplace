@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Pin</title>
+    <link rel="stylesheet" href="dependencies/node_modules\bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="views/assets/css/login.css">
+    <link rel="stylesheet" href="views/assets/css/verify.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+                <!--Gaiijin column-->
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 gaiijincolumn">
+                    <!--Elipse circle images-->
+                <div class="gaiijincolumn__elipse">
+                    <img src="views/assets/images/elipse.png" alt="elipse" class="img-fluid elipse_class">
+                    <img src="views/assets/images/elipse(1).png" alt="elipse" class="img-fluid elipse_class--1">
+                    <img src="views/assets/images/elipse-2.png" alt="elipse" class="img-fluid elipse_class--2">
+                </div>
+
+                    <!--Gaiijin image-->
+                <img src="views/assets/images/Untitled_design__4_-removebg-preview 1.png" alt="Logo" class="img-fluid gaiijincolumn__logopic">
+                
+                <div class="gaiijincolumn__text gaiijincolumn__text-small--scroll">
+                    <h3>I see you're the first <br> time here.</h3>
+                    <p class="p-tag">Maybe some number here will help me see it better. <br>
+                        Oh Good. Ok, let's do it then. </p>
+                </div>
+            </div>
+
+                <!--Verify pin column-->
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                <div class="form-control verifypin">
+                    <h4>Enter Verification Code</h4>
+                    <p class="p-tag"> Enter your verification code that was sent <br>
+                        through your e-mail or phone number
+                    </p>
+                    <p class="verifypin__number p-tag">Verification number</p>
+
+                        <!--Pin input-->
+                    <div class="verifypin__mb3">
+                        <input type="input" class="pin-number" >
+
+                        <input type="input" class="pin-number" >
+
+                        <input type="input" class="pin-number">
+
+                        <input type="input" class="pin-number" >
+                    </div>
+
+                   
+
+                        <!--Signup tmer and buttton section-->
+                    <div class="verifypin__btn">
+                        <div class="count d-flex">
+                            <img src="views/assets/images/icons8-clock-32.png" alt="Clock icon">
+
+                            <div style="position:absolute; " id="timer"></div>
+                        </div>
+
+                      <a href="reset.html"><button type="button" class="btn-primary verifypin__btn-main">Sign Up</button></a>
+                    </div>
+                   
+
+                        <!--Re-send link-->
+                    <p class="verifypin__resend p-tag">Haven't gotten a code?<a href="" class="a-tag">Re-send Code</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+   
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="views/assets/js/verify.js"></script>
+</body>
+</html>

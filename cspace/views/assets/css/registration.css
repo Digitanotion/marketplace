@@ -1,0 +1,19 @@
+.gaiijincolumn{
+    height: 47rem;
+}
+.accountdetails{
+    margin-top: 18.5%;
+    padding: 0% 15% 0% 15%;
+    border-style: none;
+}
+.btn--accountdetails{
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    margin-top: 4%;
+    font-size: 16px;
+}
+
+.signin{
+    padding: var(--padding);
+}

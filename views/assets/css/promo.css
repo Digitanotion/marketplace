@@ -1,0 +1,58 @@
+.plan-announce {
+        margin-left: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 5em;
+      }
+      @media (max-width: 806px) {
+        .plan-announce {text-align: center; margin-left:0; margin-bottom: 2em;}
+      }
+      .select-hover {
+        background: #f3faff;
+      }
+
+      .subject {
+        max-width: 23em;
+        margin-left: 2em;
+        margin-top: 11em;
+        background: none !important;
+        border: none;
+        color: #fff !important;
+        font-weight: bolder !important;
+        
+      }
+
+      .subject ul .list-group-item {
+        background: none !important;
+        border: none !important;
+      }
+      
+
+
+      .card.details {
+        width: 10rem; 
+        flex: 0 0 auto;
+      }
+      
+  
+      @media (max-width: 806px) {
+        .card.details {width: 90%; margin: auto;}
+      }
+      .card.details .card-header {font-size: 16px; font-weight: bolder; background: #f3faff;}
+
+
+
+      .card-wrapper ul li:nth-child(1) {
+         font-size: 15px;
+         font-weight: bolder;
+         padding: 15px 0;
+      }
+
+      .select-head {
+          font-size: 25px; font-weight: bolder; background: #2a84eb; color: #fff;
+      }
+      .select-card {
+        border:4px solid #2a84eb;
+      }
+      .hello li:hover ~ .list-group-flush li{
+          background: #f3faff;
+      }

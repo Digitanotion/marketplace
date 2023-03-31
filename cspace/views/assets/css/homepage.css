@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ } 
+p{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h5{
+    font-weight: 500;
+}
+header {
+    height: 100vh;
+    background-color: #f1fafd;
+    background-image:  url(pictures/white\ pattern\ png\ 2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header_parent-img-1{
+   width: 55%;
+   position: absolute;
+   left: 0%;
+   bottom: 0%;
+}
+.header_text{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 700;
+}
+.header_parent-img-2{
+    width: 46%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+.Adspost{
+    text-align: center;
+    font-weight: 900;
+}
+.Adsposted{
+    background-color: rgba(0, 113, 193, 0.02);;
+}
+.Adsposted__categories{
+    background-color: white;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 0px 8px 10px 8px #eceaea;
+    margin-bottom: 13%;
+}
+.Adsposted__categories-header{
+    color: #2a84eb;
+    text-align: center;
+}
+.Adsposted__categories-column:hover{
+    background-color: #edf5f8;
+}
+.Adsposted__items{
+    align-content: flex-end;
+}
+.Adsposted__items-text{
+    width: 95%;
+    margin: 2% 0% 0% 4%;
+}
+.Adsposted__items-text p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500; 
+}
+.Adsposted__items-arrow--right{
+    margin-top: 2%;
+}
+.Adsposted__prodcuts{
+    background-color: white;
+    border-radius: 1.8%;
+}
+.Adsposted__prodcuts p{
+    font-weight: 700;
+    font-size: 170%;
+}
+.Adsposted__prodcuts--pricebookmark{
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.Adsposted__prodcuts-button{
+    width: 86%;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+}
+.footer{
+   height: 95vh;
+   background-color: #3d3c3c;
+   color: #fff;
+   padding: 10% 0% 0% 8.33333333%;
+}
+.footer__sub-class--list{
+    padding: 0%;
+    list-style: none;
+    line-height: 32px;
+}
+.footer__endcontent{
+    margin-top: 14%;
+    /* margin-top: 14%; */
+    /* margin: 0%; */
+}
+@media only screen
+and (max-width: 767px){
+    .footer__endcontent{
+        margin-top: 0%;
+    }
+}
+.footer__endcontent-text{
+    font-size: 14px;
+    padding-bottom: 0%;
+ }

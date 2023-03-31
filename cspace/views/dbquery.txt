@@ -1,0 +1,28 @@
+CREATE TABLE mallAdmins(
+
+    defaultColID INT(11) PRIMARY KEY AUTO_INCREMENT,
+    mallAdminID varchar(100),
+    mallAdminFirstName varchar(100),
+    mallAdminLastName varchar(100),
+    mallAdminEmail varchar(100),
+    mallAdminPhone varchar(100),
+    mallAdminPassword varchar(100),
+    approveAds INT(1),
+    approveKyc INT(1),
+    mallAdminRegTime varchar(100)
+);
+
+
+ALTER TABLE mallusrs ADD mallUsrEmailActivateAdmin varchar(100) DEFAULT " "
+
+
+CREATE TABLE mallNotifications(
+
+    defaultColID INT(255) PRIMARY KEY AUTO_INCREMENT,
+    mallNotifyTime varchar(20),
+    mallNotifyAdminInitID varchar(30),
+    mallNotifyToUserID varchar(30),
+    mallNotifyContent text,
+    mallNotifyReadStat INT(1)
+
+);
