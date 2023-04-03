@@ -230,14 +230,34 @@ $getUsrInfo = $usrAccManager_ob->getUsrBasicInfoByID($pageUsrID__)['message'];
             <div class="">
               <span class="fs-title-3 fw-bolder messagetext" id="prof1"><?php echo ($getReceiverBizInfo_chat['status'] == 1) ? $getReceiverBizInfo_chat['message']['mallBizName'] : "N/A"; ?></span>
             </div>
-            <div>
-              &nbsp;
+
+            <div class="class">
+              <?php
+                $dirFound = "../handlers/uploads/optimized/";
+                $dirNotFound = "assets/images/no_image.jpg";
+                $mediaManager = new MediaManager();
+
+                $thumbImageName = $mediaManager->getThumbImage($_GET['ad']);
+                if ($thumbImageName['status'] == 1) {
+                    $thumbImageName = $thumbImageName['message']['mallMediaName'];
+                } else {
+                    $thumbImageName = "";
+                }
+                $imageFile = $dirFound.$thumbImageName;
+                $res = $mediaManager->checkOptimizedImage($imageFile);
+                $img_ = ($res["status"] == 1) ? $imageFile : $dirNotFound; 
+              ?>
+              <div class="ha-image-profile-smaller__holder bg-purple rounded-circle"  style="background-image: url(<?php echo empty($thumbImageName) ? $dirNotFound : $img_; ?>);">
+              </div>
+            </div>
+            <!-- <div>
+              &nbsp; -->
               <!-- <button class="text-center bg-white flagicon"><i class="fa fa-flag fa-2x messagetext"></i></button>
                         <i class="fa fa-ellipsis-vertical fa-2x ms-5 messagetext"></i> -->
-            </div>
+            <!-- </div>
             <div>
               &nbsp;
-            </div>
+            </div> -->
           </div>
           <hr class="m-0 bg-hr-light">
           <div class="px-4 py-2 d-flex justify-content-between">
