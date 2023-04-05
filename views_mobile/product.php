@@ -271,12 +271,16 @@ $newToken = $securityManager_ob->setCSRF();
                   <?php }
                   } ?>
                 </div>
-
+                <?php 
+                  $query_string = parse_url($url, PHP_URL_QUERY);
+                  $last_query_param = end(explode('?', $query_string));
+                  $url_ = 'http://gaijinmall.com/product?'.$last_query_param;
+                ?>
                 <div class="container ha-social__share mt-3 d-flex justify-content-center">
-                  <a href="mailto:?subject=<?php echo $allAdByID['mallAdTitle']; ?>&body=<?php echo urlencode($url); ?>" target="_blank" rel="nofollow" class="fa fa-envelope-o ms-2"></a>
-                  <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($url); ?>&text=<?php echo $allAdByID['mallAdTitle']; ?>" target="_new" class="fa fa-facebook ms-2"></a>
-                  <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode($url); ?>&text=<?php echo $allAdByID['mallAdTitle']; ?>" target="_new" class="fa fa-twitter ms-2"></a>
-                  <a href="whatsapp://send?text=<?php echo urlencode($url . " From Gaijinmall"); ?>" target="_new" class="fa fa-whatsapp ms-2"></a>
+                  <a href="mailto:?subject=<?php echo $allAdByID['mallAdTitle']; ?>&body=<?php echo urlencode($url_); ?>" target="_blank" rel="nofollow" class="fa fa-envelope-o ms-2"></a>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($url_); ?>&text=<?php echo $allAdByID['mallAdTitle']; ?>" target="_new" class="fa fa-facebook ms-2"></a>
+                  <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode($url_); ?>&text=<?php echo $allAdByID['mallAdTitle']; ?>" target="_new" class="fa fa-twitter ms-2"></a>
+                  <a href="whatsapp://send?text=<?php echo urlencode($url_ . " From Gaijinmall"); ?>" target="_new" class="fa fa-whatsapp ms-2"></a>
                 </div>
 
               </div>

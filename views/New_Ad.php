@@ -516,9 +516,9 @@ $newToken = $securityManager_ob->setCSRF();
 
         // set the IDs and initial text for the elements
         commElement.attr('id', 'comm');
-        commElement.text(commission);
+        commElement.text('<?php echo $adManager::CURRENCY;?>' + commission);
         profitElement.attr('id', 'profit');
-        profitElement.text(profit);
+        profitElement.text('<?php echo $adManager::CURRENCY;?>' + profit);
         finalElement.attr('id', 'finalPrice');
         finalElement.attr('name', 'mallAdPriceFinal');
         finalElement.attr('hidden', 'hidden');
