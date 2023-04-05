@@ -104,6 +104,50 @@ class AdManager
 		return $this->msg;
 	}
 
+	public function setCommission($categID, Int $percent) {
+		$db = new InitDB(DB_OPTIONS[2], DB_OPTIONS[0],DB_OPTIONS[1],DB_OPTIONS[3]);
+		$sqll = "SELECT mallAdCategID FROM malladcommission WHERE mallAdCategID = ?";
+		$stmtt = $db->run($sqll, [$categID]);
+		$addTime = time();
+		if ($stmtt->rowCount() > 0) {
+			$sql = "UPDATE malladcommission SET mallAdPercent = ?, mallAdTime = ? WHERE mallAdCategID = ?";
+			$stmt = $db->run($sql, [$percent, $addTime, $categID]);
+			if ($stmt->rowCount() > 0) {
+				$this->message(1, "Percentage for category updated successfully");
+				return $this->msg;
+			} else {
+				$this->message(0, "Percentage update was not successful");
+				return $this->msg;
+			}
+			
+		} else {
+			$sql = "INSERT INTO malladcommission (mallAdCategID, mallAdPercent, mallAdTime, mallAdStatus) VALUES (?,?,?,?)";
+			$stmt = $db->run($sql, [$categID, $percent, $addTime, 0]);
+			if ($stmt->rowCount() > 0) {
+				$this->message(1, "Commission has been set successfully");
+			   return $this->msg;
+			   exit;
+			} else {
+			   $this->message(0, "Failed to set commission");
+			   return $this->msg;
+			   exit;
+			}
+		}	
+	}
+
+	public function getCommission($categID) {
+		$db = new InitDB(DB_OPTIONS[2], DB_OPTIONS[0],DB_OPTIONS[1],DB_OPTIONS[3]);
+		$sqll = "SELECT mallAdPercent FROM malladcommission WHERE mallAdCategID = ?";
+		$stmtt = $db->run($sqll, [$categID]);
+		if ($stmtt->rowCount() > 0) {
+			$result = $stmtt->fetch();
+			return $result["mallAdPercent"];
+		} else {
+			return 0;
+		}
+		
+	}
+
 	// Update Category
 	public function updateCategory($mallUsrID, $mallCategID, $mallCategName, $mallCategParentID, $mallCategIcon)
 	{
@@ -2504,6 +2548,8 @@ class AdManager
 		return	$this->msg;
 		
 	}
+
+	
 
 //New Ads, Mobile product search
 	function getProductByKeyword($serach, $limit)

@@ -202,7 +202,7 @@ if (isset($_GET['adcategory'])) {
                     </span>
                   <?php } ?>
                 </div>
-                <a href="product.php?adID=<?php echo $fields['mallAdID']; ?>" class="col-8 rounded-end bg-light-blue text-dark">
+                <a href="/gaijinmall/views/product.php?adID=<?php echo $fields['mallAdID']; ?>" class="col-8 rounded-end bg-light-blue text-dark">
                   <div class="">
                     <div class="my-2 ">
                       <span class="fs-md fw-bolder"><?php echo $fields['mallAdTitle'] ?></span>

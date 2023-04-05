@@ -162,8 +162,8 @@ class MediaManager{
                         $this->message(0, "Something Went Wrong");
                     }
                     //Compress and optimise
-                    $image->setThumbWidthHeight($thumbImageWidth, $thumbImageHeight);
-                    $image->setOptWidthHeight($optImageWidth, $optImageHeight);
+                    // $image->setThumbWidthHeight($thumbImageWidth, $thumbImageHeight);
+                    // $image->setOptWidthHeight($optImageWidth, $optImageHeight);
                     //echo $image->getJson();
                     
                 }

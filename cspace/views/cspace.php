@@ -48,6 +48,14 @@ if (isset($_POST['btnCategNewOpt'])){
   $response=$adManager->addCategory_Params("userID",$_POST['txtOptCateg'],$paraMs[0]."-".$paraMs[2],$paraMs[1],$_POST['txtCategParaVals']);
   echo $response['status'];
 }
+
+//add new commission
+if (isset($_POST["btnCom"])) {
+  $commissionObj = $adManager->setCommission(htmlspecialchars($_POST['txtCategParent']), htmlspecialchars($_POST['percent']));
+  $sys_msg['msg_type'] =  $commissionObj['status'];
+   $sys_msg['msg'] = $commissionObj['message'];
+}
+
 //Add new Options to a Category
 if (isset($_GET['delCategOpt'])&&$_GET['delCategOpt']==="true"&&isset($_GET['push'])&&isset($_GET['lid'])&&$_GET['push']=="cateopt"){
   $response=$adManager-> removeCategoryOption($_GET['clid']);
@@ -518,6 +526,39 @@ if($revStatistics['status'] == 1){
                   </div>
                 </form>
                 <!-- /.card-body -->
+              </div>
+              <div>
+                <div class="card">
+                  <div class="card-header">
+                    <h3  class="card-title">Choose Category Commission</h3>
+                    <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  </div>
+                  <form class=" py-4 px-4" method="post">
+                    <label class="pl-2 mb-2">Category Parent</label>
+                    <select class="form-control select2" name="txtCategParent" id="txtCategParent" style="width: 100%;">
+                        <option selected value="none">Select Category</option>
+                        <?php $getCategoryAll=$adManager->getAllMallCategory();
+                        if ($getCategoryAll['status']=="1"){
+                        foreach ($getCategoryAll['message'] as  $value) {
+                        ?>  
+                        <option value="<?php echo $value['mallCategID'];?>"><?php echo $value['mallCategName'];?></option>
+                        <?php }}
+                      elseif ($getCategoryAll['status']=="0"){ ?>
+                          <option value="none">No Category Yet</option>
+                      <?php }?>
+                    </select>
+                    <div class="mt-2">
+                      <input class="form-control" type="number" placeholder="add percentage" name="percent">
+                    </div>
+                    <div class="mt-3">
+                      <button type="submit" class="btn btn-primary" name="btnCom" id ="btnCategNewOpt">Add Commission</button>
+                  </div>
+                  </form>
+                </div>
               </div>
             </div>
             <!-- /.col -->

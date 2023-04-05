@@ -122,7 +122,7 @@ $getUsrInfo = $usrAccManager_ob->getUsrBasicInfoByID($pageUsrID__)['message'];
                         <div class="d-flex w-100">
                             <div class=""><i class="fa fa-business-time fa-3x"></i></div>
                             <div class="" id="prof1">
-                                <span class="fs-md"> <?php echo $msgAdName ?></span> <br>
+                                <span class="fs-md"> <?php echo $msgAdName ?></span> ksdfjlk<br>
                                 <span class="fs-md fw-bold messagetext"><?php echo CURRENCY . " $msgAdAmount"; ?></span>
                             </div>
                         </div>

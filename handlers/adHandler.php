@@ -85,6 +85,10 @@ if (strpos($url, 'localhost')) {
     	
 	} 
 
+	if (isset($_POST["cat"])) {
+		echo $adManager->getCommission($_POST["cat"]);
+	}
+
 	if (isset($_GET['location_state'])){
 	   
 		$location_get = $_GET['location_state'];

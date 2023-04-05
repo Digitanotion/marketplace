@@ -15,6 +15,33 @@ else{
 USE services\SecS\SecurityManager;
 USE services\InitDB;
 class AuditManager{
+
+    public function logActivity(String $userID, String $log_message, String $log_type) {
+        $logTime=time();
+        $dbHandler=new InitDB(DB_OPTIONS[2], DB_OPTIONS[0],DB_OPTIONS[1],DB_OPTIONS[3]);
+        $stmt=$dbHandler->run("INSERT INTO mallaudit (userID, log_message,log_time,log_type) VALUES (?,?,?,?)", [$userID,$log_message, $logTime, $log_type]);
+        if ($stmt->rowCount()==1){
+            return true;
+        }
+        else return false;
+    }
+
+    public function fetchUserActivities(String $userID, String $log_type) {
+         //This behavior handles logging
+        
+        try {
+            $dbHandler=new InitDB(DB_OPTIONS[2], DB_OPTIONS[0],DB_OPTIONS[1],DB_OPTIONS[3]);
+            $stmt=$dbHandler->run("SELECT * FROM mallaudit WHERE userID = ? AND log_type = ? ORDER BY id DESC");
+            if ($stmt->rowCount()>0){
+                return $stmt;
+            }
+            else{
+                return false;
+            } 
+        } catch (\PDOException $e) {
+            //throw $th;
+        }
+    }
     
     function publishRecentActivity(String $userKey, bool $logApprove, $logMessage, Int $logImpact, Int $logType){
         //This behavior handles logging

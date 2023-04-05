@@ -385,7 +385,6 @@ $newToken = $securityManager_ob->setCSRF();
       <div class="container">
         <div class="row">
           <div class="col-md-8 mb-3">
-
             <?php
             $getSimilarAds = $adManager_ob->getSimilarAds($allAdByID['mallAdTitle'], $allAdByID['mallCategID'], $allAdByID['mallAdID']);
             if ($getSimilarAds['status'] == 1 ) {
@@ -446,6 +445,7 @@ $newToken = $securityManager_ob->setCSRF();
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Make an Offer</h5>
+
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form method="POST" action="">
@@ -458,6 +458,7 @@ $newToken = $securityManager_ob->setCSRF();
           </div>
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary w-100" name="makeOffer__btn">SEND</button>
+
           </div>
         </form>
 

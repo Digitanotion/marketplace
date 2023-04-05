@@ -6,9 +6,6 @@ require_once __DIR__.'/router.php';
 get('/views_mobile/shop/$user', 'page');
 
 
-
-
-
 any('/404','300');
 
 // echo __DIR__;
