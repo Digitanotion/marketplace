@@ -158,7 +158,7 @@ $adID="";
                     <div class="ha-none__display w-50 justify-content-center mt-5 mx-auto" id="premiums">
                         <p><strong><a href="#" class="text-dark">Promoted Ads</a></strong> are specifically designed tools for the sellers that help to promote the items more.</p>
                         <p>As a result, you will sell all the goods much faster and get <strong>up to 100x more clients</strong></p>
-                        <p>To learn more about the types of Premium Services we offer, go <strong><a href="#">here</a></p></strong>
+                        <p>To learn more about the types of Premium Services we offer, go <strong><a href="https://gaijinmall.com/promotion_list.php">here</a></p></strong>
 
                     </div>
                 </div>

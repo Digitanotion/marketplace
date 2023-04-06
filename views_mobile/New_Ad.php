@@ -44,6 +44,7 @@ if (isset($_POST["submit"])) {
         isset($_POST["mallAdTitle"]) ? $title = $_POST["mallAdTitle"] : $title = "";
         isset($_POST["mallAdDesc"]) ? $desc = $_POST["mallAdDesc"] : $desc = "";
         isset($_POST["mallAdPrice"]) ? $price = $_POST["mallAdPrice"] : $price = "";
+        isset($_POST["mallAdPriceFinal"]) ? $finalPrice = $_POST["mallAdPriceFinal"] : $finalPrice = 0;
         isset($_POST["mallAdNegotiable"]) ? $neg = $_POST["mallAdNegotiable"] : $neg = 0;
         isset($_POST["mallAdPromoID"]) ? $promoID = $_POST["mallAdPromoID"] : $promoID = "";
         isset($_POST["location_state"]) && isset($_POST["location_city"]) ? $adLocation = $_POST["location_city"] . "." . $_POST["location_state"] : $adLocation = "";
@@ -248,7 +249,7 @@ $newToken = $securityManager_ob->setCSRF();
                 <div class="second d-none">
 
                     <div class="row justify-content-between ">
-
+                        <span class="catCom d-none"></span>
                         <div class="row justify-content-between m-0 p-0" id="load-form-inputs"></div>
                         <div class=" d-flex mb-1 col-md-12 col-sm-12 w-100 my-2" id="multiselec">
                             <div class="form-floating w-100">
@@ -263,6 +264,9 @@ $newToken = $securityManager_ob->setCSRF();
                                 <label for="mallAdPrice" style="z-index: 10001; padding-left:50px; font-size:14px;">Price</label>
                             </div>
                         </div>
+
+                        <div class="saleDetail"></div>
+
                         <div class="fs-md-1 my-2" id="multiselec">
                             <div class="form-check ">
                                 <input type="checkbox" class="p-2 form-check-input" role="switch" id="mallAdNegotiable" name="mallAdNegotiable">
@@ -486,6 +490,59 @@ $newToken = $securityManager_ob->setCSRF();
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl) }) */
     </script>
+
+    <script type="text/javascript">
+
+      $("#mallAdPrice").on('keyup change', function(){
+
+        //get commission
+
+        var categ = $("[name='category']").val();
+        $.ajax({
+          url: "../handlers/adHandler.php",
+          method: "POST",
+          data: { cat: categ },
+          success: function(response) {
+            $('.catCom').text(response);
+          },
+          error: function() {
+            console.log("Error occurred");
+          }
+        });
+        
+        
+        var price = $(this).val();
+        var commission = (price * ($(".catCom").text()/100)).toFixed(2);
+
+        var profit = price - commission;
+        profit = profit.toFixed(2);
+
+        // create the elements
+        var commElement = $('<label>');
+        var profitElement = $('<label>');
+
+        var finalElement = $('<input>');
+
+        // set the IDs and initial text for the elements
+        commElement.attr('id', 'comm');
+        commElement.text('<?php echo $adManager::CURRENCY;?>' + commission);
+        profitElement.attr('id', 'profit');
+        profitElement.text('<?php echo $adManager::CURRENCY;?>' + profit);
+        finalElement.attr('id', 'finalPrice');
+        finalElement.attr('name', 'mallAdPriceFinal');
+        finalElement.attr('hidden', 'hidden');
+        finalElement.val(profit);
+
+        // update the existing elements and add the new elements to the page
+        $("#mallAdPriceFinal").val(profit);
+        $('#profit').text(profit);
+        $('.saleDetail').html('<div class="d-flex justify-content-between col-md-6 col-sm-12"><label class="fw-bolder">Commission</label></div><div class="d-flex justify-content-between col-md-6 col-sm-12 mt-2"><label class="fw-bolder">Sales Profit</label></div> <div></div>');
+        $('.saleDetail').find('div').eq(0).append(commElement);
+        $('.saleDetail').find('div').eq(1).append(profitElement);
+        $('.saleDetail').find('div').eq(2).append(finalElement);
+      });
+    </script>
+
 </body>
 
 </html>
