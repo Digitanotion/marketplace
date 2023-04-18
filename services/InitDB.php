@@ -26,7 +26,7 @@ if (strpos($url,'localhost')) {
     //require_once(__DIR__ ."\../../vendor/samayo/bulletproof/src/bulletproof.php");
     require_once(__DIR__ . "\../vendor/autoload.php");
     //USE services\configGlobal;
-    require_once(__DIR__."./configGlobal.php");
+    require_once("configGlobal.php");
 } else if (strpos($url,'gaijinmall')) {
     //require_once($_SERVER['DOCUMENT_ROOT']."/vendor/samayo/bulletproof/src/bulletproof.php");
     require_once($_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php");

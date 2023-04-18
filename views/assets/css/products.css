@@ -88,6 +88,10 @@
     opacity: 0.75
 }
 
+.product_addcart_button .product_addcart_btn{
+    color: white;
+}
+
 /* Ad Product Image Carousel */
 @media only screen
 /* MOBILE SCREENS */
