@@ -298,7 +298,22 @@ $newToken = $securityManager_ob->setCSRF();
 
               </div>
 
-
+            <!-- add cart button  -->
+            <div class="d-flex justify-content-evenly align-items-center product_addcart_button bg-primary" style="border-radius:4px">
+                    <!-- add to cart button here -->
+                    <button class="d-flex justify-content-around align-items-center btn w-100 product_addcart_btn" style="color:white;font-weight:bold;font-size:0.8rem;">
+                      <!-- <div>
+                        <div class="position-relative">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                          </span>
+                          <span class="visually-hidden">Number of cart items
+                        </div>
+                      </div> -->
+                      Add to Cart
+                    </button>
+                  </div>
             </div>
             <div class="text-center mt-3 fs-6">
               <a href="./customer_review.php?adrec=B787Bbb87bsbd8nsd87877fds8f99fs9fdf8df9df&adtok=<?php echo $allAdByID['mallAdID']; ?>" class="fs-md mt-2 text-primary"><span class="bg-primary text-white p-1 me-1 mb-3 fs-title-2 rounded" style="line-height: 25px;"><?php echo number_format($productRating, 1); ?></span> <i class="fa <?php echo ($productRating > 0) ? "fa-star" : "fa-star-o"; ?> m-0 text-orange"></i><i class="fa <?php echo ($productRating > 1) ? "fa-star" : "fa-star-o"; ?> m-0 text-orange"></i><i class="fa <?php echo ($productRating > 2) ? "fa-star" : "fa-star-o"; ?> m-0 text-orange"></i><i class="fa <?php echo ($productRating > 3) ? "fa-star" : "fa-star-o"; ?> m-0 text-orange"></i><i class="fa <?php echo ($productRating > 4) ? "fa-star" : "fa-star-o"; ?> m-0 text-orange"></i></a>

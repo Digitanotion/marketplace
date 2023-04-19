@@ -1,0 +1,224 @@
+@media screen and (min-width: 100px) {
+  .checkout__customer-info {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .checkout__hr {
+    margin-top: 5px;
+    max-width: 100%;
+    height: 1px !important;
+    background-color: #5c5c5c;
+
+  }
+  .cart__header {
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .checkout__main {
+    background-color: #f3faff;
+    padding-left: 15px !important;
+    padding-right: 45px;
+    padding-bottom: 65px;
+  }
+  .checkout__form {
+    width: 100%;
+    padding-left: 35px;
+  }
+  .orderSummary p {
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .checkout__input {
+    background-color: #f3faff !important;
+    margin: 10px;
+    margin-left: 0px !important;
+  }
+  .checkout__input > input {
+    padding: 15px;
+    width: 270px;
+  }
+  .orderSummary {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 35px;
+    padding-top: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .orderSummary ul li {
+    font-weight: bold;
+  }
+
+  .checkout__proceed {
+    border: 0px;
+  }
+
+  select {
+    width: 96% !important;
+  }
+  select option:nth-child(1) {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .checkout__form {
+    width: 100%;
+    padding-left: 35px;
+  }
+  .checkout__input > input {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .orderSummary {
+    /* border:1px solid #0b5ed7 ; */
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 35px;
+    padding-top: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+    select {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .checkout__hr {
+    margin-top: 5px;
+    max-width: 80%;
+  }
+  .checkout__form {
+    width: 60%;
+    padding-left: 35px;
+  }
+  .checkout__input > input {
+    padding: 15px;
+    max-width: 220px;
+  }
+  .orderSummary {
+    /* border:1px solid #0b5ed7 ; */
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 35px;
+    padding-top: 20px;
+    width: 30%;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  select {
+    width: 85% !important;
+    font-size: 13px !important;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  select option {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkout__main {
+    background-color: #f3faff;
+    padding-left: 35px !important;
+    padding-right: 45px;
+    padding-bottom: 65px;
+  }
+  .checkout__form {
+    width: 60%;
+  }
+  .orderSummary p {
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .checkout__input {
+    background-color: #f3faff !important;
+    margin: 10px;
+  }
+  .checkout__input > input {
+    padding: 15px;
+    width: 270px;
+  }
+  .orderSummary {
+    /* border:1px solid #0b5ed7 ; */
+    font-size: 14px;
+    padding: 35px;
+    padding-top: 20px;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .orderSummary ul li {
+    font-weight: bold;
+  }
+
+  .checkout__proceed {
+    border: 0px;
+  }
+  .cart__header {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .fa-truck {
+    font-size: 40px !important;
+    /* width: 200px; */
+  }
+  /* .fa-gift {
+  } */
+
+  .checkout__input-div > div:nth-child(2),
+  div:nth-child(4) {
+    padding-left: 20px;
+  }
+
+   select {
+    width: 69% !important;
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 30%;
+}
+
+input.form-control:focus {
+  /* border: 0; */
+  background-color: unset;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.inputState {
+  font-size: 14px !important;
+}
+
+.form-check-label {
+  font-size: 14px !important;
+}

@@ -42,7 +42,7 @@ Data Field Error=301
     [
     "root",
         "",
-        "gaijinma_services",
+        "gaijinmall",
         "localhost",
     ], false);
 
