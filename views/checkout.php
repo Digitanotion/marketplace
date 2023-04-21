@@ -119,7 +119,7 @@ $newToken = $securityManager_ob->setCSRF();
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
     <link rel="stylesheet" href="../dependencies/node_modules/select2-bootstrap-5-theme/dist/select2-bootstrap-5-theme.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/checkout.css" >
+    <link rel="stylesheet" href="./assets/css/checkout.css">
   <link rel="stylesheet" href="./assets/css/translate.css">
   <link rel="stylesheet" href="./assets/css/vertical-menu.css">
   <link rel="stylesheet" href="assets/css/cute-alert.css">
@@ -144,14 +144,29 @@ $newToken = $securityManager_ob->setCSRF();
         margin-left: 0px !important;
     }
 
-    .checkout__input > input {
+    /* .checkout__input > input {
         padding: 5px;
         width: 270px;
-    }
+    } */
 
 
        /* search box  */
 @media screen and (min-width: 100px) {
+  .orderSummary {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 35px;
+    padding-top: 20px;
+    /* width: 100%; */
+    width: 79vw !important;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
   .input__div {
     /* padding-top: 100px; */
     /* margin-left: 50px; */
@@ -172,6 +187,22 @@ $newToken = $securityManager_ob->setCSRF();
     font-size: 13px;
     padding-left: 0px;
   }
+
+  .checkout__input > input {
+        padding: 5px;
+        /* width: 270px; */
+        width:79vw !important;
+    }
+
+    textarea {
+  box-sizing: border-box;
+  width: 79vw !important;
+}
+
+select {
+    width:79vw !important;
+    /* width: 80% !important; */
+  }
 }
 @media screen and (min-width: 576px) {
 }
@@ -180,8 +211,73 @@ $newToken = $securityManager_ob->setCSRF();
     /* padding-top: 100px; */
     margin-right: 40px;
   }
+ .checkout__input > input {
+        padding: 5px;
+        /* width: 270px; */
+        width:39vw !important;
+    }
 }
+
+@media screen and (min-width: 992px) {
+   .orderSummary {
+    /* border:1px solid #0b5ed7 ; */
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 35px;
+    padding-top: 20px;
+    /* width: 30%; */
+     width: 45vw !important;
+    height:100%;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+   .checkout__input > input {
+        padding: 5px;
+        min-width:22.2vw !important;
+        /* width:995vw !important; */
+        /* width: 270px; */
+        /* width:600px !important; */
+    }
+
+  textarea {
+    box-sizing: border-box;
+    width: 45vw !important;
+  }
+
+select {
+    width:45vw !important;
+    /* width: 80% !important; */
+  }
+
+  .checkout__hr {
+    margin-top: 5px;
+    max-width: 90%;
+    height: 1px !important;
+    background-color: #5c5c5c !important;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .orderSummary {
+    /* border:1px solid #0b5ed7 ; */
+    font-size: 14px;
+    padding: 35px;
+    padding-top: 20px;
+    /* width: 30% !important; */
+    width: 32vw !important;
+    height: 100%;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
   .input__div {
     /* padding-top: 100px; */
     margin-right: 0px;
@@ -200,6 +296,32 @@ $newToken = $securityManager_ob->setCSRF();
   input::placeholder {
     font-size: 13px;
     padding-left: 0px;
+  }
+
+    .checkout__input > input {
+        padding: 5px;
+        min-width:22.2vw !important;
+        /* width:995vw !important; */
+        /* width: 270px; */
+        /* width:600px !important; */
+    }
+
+  textarea {
+    box-sizing: border-box;
+    width: 45vw !important;
+  }
+
+select {
+    width:45vw !important;
+    /* width: 80% !important; */
+  }
+.checkout__input-div > div:nth-child(2), div:nth-child(4) {
+    padding-left: 0px;
+}
+
+  .fa-truck {
+    font-size: 50px !important;
+    /* width: 200px; */
   }
 }
   </style>
@@ -260,6 +382,7 @@ $newToken = $securityManager_ob->setCSRF();
                           type="text"
                           name="name"
                           required
+
                         />
                       </div>
                       <div class="form-group checkout__input">
@@ -283,27 +406,27 @@ $newToken = $securityManager_ob->setCSRF();
                        />
                       </div>
                     </div>
+                    <div class="my-2 my-xl-2">
+                      <label for="inputDeliveryAddress" class="inputState">Delivery Address</label>
+                      <div class="form-group">
+                        <textarea
+                          name="textarea"
+                          id="textarea"
+                          cols="30"
+                          rows="10"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
 
-                    <!-- <label for="inputDeliveryAddress">Delivery Address</label> -->
-                    <!-- <div class="form-group" style="width:400px !important">
-                      <textarea
-                        name="textarea"
-                        id="textarea"
-                        cols="30"
-                        rows="10"
-                        placeholder="Delivery Address"
-                        required
-                      ></textarea>
-                    </div> -->
-
-                    <div class="form-group my-2 my-lg-2">
+                    <div class="form-group my-2 my-lg-2 my-xl-3">
                       <label for="inputState" class="inputState">State/Region</label>
                       <select name="" id="inputState" class="form-control" required style="font-size:13px">
                         <option selected>Select a state/region</option>
                         <option>Anambra</option>
                       </select>
                     </div>
-                    <div class="form-group my-3 my-lg-2">
+                    <div class="form-group my-3 my-lg-2 my-xl-3">
                       <label for="inputState" class="inputState">City</label>
                       <select name="" id="inputState" class="form-control" required style="font-size:13px">
                         <option selected>Select a city</option>
@@ -344,7 +467,7 @@ $newToken = $securityManager_ob->setCSRF();
                           <input class="form-check-input checkbox" type="checkbox" required/>
                           <label for="checkLabel" class="d-flex align-items-center form-check-label">
                               <!-- <i class="fa-solid fa-hand-holding-box"></i> version 6 -->
-                              <i class="fa fa-gift text-primary" style="font-size:43px"></i>
+                              <i class="fa fa-gift text-primary" style="font-size:50px"></i>
                               Door delivery 
                           </label>
                         </div>
@@ -378,7 +501,7 @@ $newToken = $securityManager_ob->setCSRF();
             </ul>
             <button
               type="button"
-              class="bg-success text-light p-2 px-4 rounded checkout__proceed"
+              class="text-light rounded checkout__proceed"
               id="proceed"
             >
               Proceed
