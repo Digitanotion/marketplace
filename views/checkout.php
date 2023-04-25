@@ -143,6 +143,12 @@ $newToken = $securityManager_ob->setCSRF();
         margin: 10px;
         margin-left: 0px !important;
     }
+textarea.form-control:focus {
+  /* border: 0; */
+  background-color: unset;
+  outline: none !important;
+  box-shadow: none;
+}
 
     /* .checkout__input > input {
         padding: 5px;
@@ -415,6 +421,7 @@ select {
                           cols="30"
                           rows="10"
                           required
+                          class="form-control"
                         ></textarea>
                       </div>
                     </div>
@@ -488,6 +495,10 @@ select {
               <div class="d-flex justify-content-between my-2">
                 <li>Sub Total</li>
                 <p>Y500</p>
+              </div>
+              <div class="d-flex justify-content-between my-2">
+                <li>Shipping Cost</li>
+                <p>Y700</p>
               </div>
               <div class="d-flex justify-content-between my-2">
                 <li>Tax</li>

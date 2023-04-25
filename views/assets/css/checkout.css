@@ -239,6 +239,13 @@ input.form-control:focus {
   box-shadow: none;
 }
 
+textarea.form-control:focus {
+  /* border: 0; */
+  background-color: unset;
+  outline: none !important;
+  box-shadow: none;
+}
+
 .inputState {
   font-size: 14px !important;
 }
