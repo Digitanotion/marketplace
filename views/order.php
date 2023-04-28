@@ -461,14 +461,16 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 50px;box-shadow
       color:white !important;
       width:100%;
       border-radius:5px;
-     border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px !important;
+     border-bottom-left-radius: 0px !important;
      border-bottom-right-radius: 0px;
 }
 .Orders__open-order:hover>button{
     color:white !important;
     border-radius:5px;
-    border-top-right-radius: 0px;
+    border-top-right-radius: 5px !important;
     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px !important;
 }
 
 .Orders__open-order>button{
@@ -491,15 +493,15 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 50px;box-shadow
     color:white !important;
     width:100%;
     border-radius:5px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 5px !important;
 }
 
 .Orders__closed-order:hover>button{
     color:white !important;
     border-radius:5px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 5px !important;
 }
 
 .Orders__closed-order:active>button{
@@ -516,7 +518,8 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 50px;box-shadow
     border:unset;
     border-radius:5px;
     border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+        border-bottom-left-radius: 5px !important;
+
 }
 .active-open{
   background-color: #0D6EFD !important;
@@ -528,7 +531,6 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 50px;box-shadow
       border:unset;
       border-top-right-radius:5px !important;
       border-top-left-radius:5px !important;
-
       border-bottom-left-radius: 0px !important;
      border-bottom-right-radius: 0px !important;
     border-radius:5px;
