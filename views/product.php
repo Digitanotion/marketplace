@@ -165,6 +165,30 @@ $newToken = $securityManager_ob->setCSRF();
   <meta property="og:type" content="Classified Store" />
   <meta property="og:url" content="product.php?adID=<?php echo $adID; ?>" />
   <meta property="og:site_name" content="Gaijinmall" />
+
+<!-- <style>
+  /* product cart  */
+@media screen and (min-width: 100px) {
+  .product_addcart_btn {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .product_addcart_btn {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  .product_addcart_btn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
+</style> -->
+
 </head>
 
 <body class="bg-light-blue">
@@ -318,7 +342,7 @@ $newToken = $securityManager_ob->setCSRF();
 
                   <div class="d-flex justify-content-evenly align-items-center product_addcart_button bg-primary" style="border-radius:4px">
                     <!-- add to cart button here -->
-                    <button class="d-flex justify-content-around align-items-center btn w-100 product_addcart_btn" style="color:white;font-weight:bold;font-size:1rem;padding-top:10px">
+                    <button class="d-flex justify-content-evenly align-items-center btn product_addcart_btn" style="color:white;font-weight:bold;font-size:1rem;padding-top:10px;">
                       <div>
                         <div class="position-relative">
                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -328,7 +352,9 @@ $newToken = $securityManager_ob->setCSRF();
                           <span class="visually-hidden">Number of cart items
                         </div>
                       </div>
-                      Add to Cart
+                      <!-- <p> -->
+                          Add to Cart
+                      <!-- </p>   -->
                     </button>
                   </div>
             </div>
