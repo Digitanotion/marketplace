@@ -314,12 +314,12 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 20px;box-shadow
 
 @media screen and (min-width: 992px) {
   .Orders__open-order:hover{
-      background-color: #0D6EFD;
-      color:white !important;
-      width:100%;
-      border-radius:5px;
-     border-bottom-left-radius: 0px;
-     border-bottom-right-radius: 0px;
+    background-color: #0D6EFD;
+    color:white !important;
+    width:100%;
+    border-radius:5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .Orders__open-order:hover>button{
     color:white !important;
@@ -334,7 +334,8 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 20px;box-shadow
       /* border-bottom-left-radius: 0px !important;
      border-bottom-right-radius: 0px !important; */
   padding:7px 17px;
-  width:100%;
+  /* width:100%; */
+  width:150px;
     /* color:black !important; */
     background-color:transparent;
     border:unset;
@@ -368,7 +369,8 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 20px;box-shadow
 
 .Orders__closed-order>button{
   padding:7px 17px;
-  width:100%;
+  /* width:100%; */
+  width:150px;
     background-color:transparent;
     border:unset;
     border-radius:5px;
@@ -378,15 +380,15 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 20px;box-shadow
 .active-open{
   background-color: #0D6EFD !important;
       color:white !important;
-      padding:7px 17px;
-      width:100%;
+      padding:7px 17px !important;
+      /* width:100%; */
       /* color:black !important; */
       /* background-color:transparent; */
       border:unset;
-      border-top-right-radius:5px !important;
+      border-top-right-radius:0px !important;
       border-top-left-radius:5px !important;
 
-      border-bottom-left-radius: 0px !important;
+      border-bottom-left-radius: 5px !important;
      border-bottom-right-radius: 0px !important;
     border-radius:5px;
     /* border-top-right-radius: 0px;
@@ -397,18 +399,20 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 20px;box-shadow
   background-color: #0D6EFD !important;
       color:white !important;
       padding:7px 17px;
-      width:100%;
+      /* width:100%; */
       /* color:black !important; */
       /* background-color:transparent; */
       border:unset;
-     border-top-right-radius: 0px !important;
-    border-top-left-radius: 0px !important;
-    border-radius:5px;
-    /* border-top-right-radius: 0px;
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius:0px !important;
+      border-radius:5px;
+      border-top-right-radius: 5px !important;
+      border-bottom-left-radius:0px !important;
+      /* border-top-right-radius: 0px;
     border-top-left-radius: 0px; */
 }
 .Order-card{
-  border-radius:5px;width:17%;background-color:white;height:13.5vh;box-shadow:0px 0px 10px #d9d9d9;font-size:18px;font-weight:bolder
+ border-radius:5px;width:300px;background-color:white;height:6.5vh;box-shadow:0px 0px 10px #d9d9d9;font-size:14px;font-weight:bolder;margin-bottom:30px;
 }
 
 .openOrderChild{
@@ -602,7 +606,7 @@ border:1px solid gray;margin:10px;border-radius:5px;padding:10px 50px;box-shadow
       <section>
         <hr style="margin-top:5px;">
         <div class="d-flex flex-wrap">
-            <div class="d-flex flex-lg-column justify-content-start mx-lg-5 Order-card">
+            <div class="d-flex flex-xl-column justify-content-start mx-lg-5 Order-card">
                 <div class="Orders__open-order" style="font-weight:bolder" >
                    <button style="font-weight:bolder" class="active-open">
                         Open Orders <span style="font-size:13px">(1)</span>
