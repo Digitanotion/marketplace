@@ -301,7 +301,7 @@ $newToken = $securityManager_ob->setCSRF();
             <!-- add cart button  -->
             <div class="d-flex justify-content-evenly align-items-center product_addcart_button bg-primary" style="border-radius:4px">
                     <!-- add to cart button here -->
-                    <button class="d-flex justify-content-around align-items-center btn w-100 product_addcart_btn" style="color:white;font-weight:bold;font-size:0.8rem;">
+                    <button class="d-flex justify-content-evenly align-items-center btn product_addcart_btn" style="color:white;font-weight:bold;font-size:0.8rem;">
                       <!-- <div>
                         <div class="position-relative">
                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
