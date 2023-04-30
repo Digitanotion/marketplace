@@ -67,6 +67,15 @@ if (isset($_GET['view_business'])) {
             window.flutter_inappwebview.callHandler('getPageTitles', 1, true, pageTitle)
         });
     </script>
+      <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+         <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
     <meta name="theme-color" content="#c3e6ff">
     <link rel="shortcut icon" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="views/assets/css/personal-buiness.css">
@@ -150,6 +159,8 @@ if (isset($_GET['view_business'])) {
 
     </section>
 </body>
+ <!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 <!-- <script src="./assets/js/personalbusiness.js"></script> -->
 <script src="../dependencies/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../dependencies/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
