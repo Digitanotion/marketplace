@@ -1,0 +1,47 @@
+@media screen and (min-width: 100px) {
+  .cart__header {
+    font-size: 23px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .orderDetails__paymentInfo {
+    width: 100%;
+  }
+  .orderDetails__deliveryDetails {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+    .orderDetails__paymentInfo {
+    width: 89vw;
+  }
+}
+@media screen and (min-width: 768px) {
+    .orderDetails__paymentInfo {
+    width: 92vw;
+  }
+  .orderDetails__deliveryDetails {
+    width:92vw;
+  }
+}
+@media screen and (min-width: 992px) {
+    .orderDetails__paymentInfo {
+    width: 89vw;
+  }
+  .orderDetails__deliveryDetails {
+    width: 89vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cart__header {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .orderDetails__paymentInfo {
+    width: 550px;
+  }
+  .orderDetails__deliveryDetails {
+    width: 550px;
+  }
+}
