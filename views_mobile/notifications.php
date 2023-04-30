@@ -66,6 +66,15 @@ $getAllNotifications=$usrMessage_ob->getAllUsrNotifi_ByID($pageUsrID__);
     <link rel="stylesheet" href="assets/css/seller.css">
     <link rel="stylesheet" href="./assets/css/vertical-menu.css">
     <link rel="stylesheet" href="./assets/css/adverts.css">
+    <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+         <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 <body>
     <section class="container-fluid m-0 p-0 ">
@@ -95,6 +104,8 @@ $getAllNotifications=$usrMessage_ob->getAllUsrNotifi_ByID($pageUsrID__);
             
         </div>
     </section>
+    <!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
     <script src="../dependencies/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../dependencies/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../dependencies/node_modules/toastr/build/toastr.min.js"></script>

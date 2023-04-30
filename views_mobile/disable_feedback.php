@@ -63,6 +63,15 @@ $hasUserPromotedAd = $adsManager_ob->hasUserPromotedAd($pageUsrID__);
     <link rel="stylesheet" href="./assets/css/vertical-menu.css">
     <link rel="stylesheet" href="./assets/css/set.css">
     <link rel="stylesheet" href="assets/css/cute-alert.css">
+    <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+         <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 
 <body>
@@ -129,13 +138,15 @@ $hasUserPromotedAd = $adsManager_ob->hasUserPromotedAd($pageUsrID__);
 
             </div>
         </section>
-        <script src="../dependencies/node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../dependencies/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../dependencies/node_modules/toastr/build/toastr.min.js"></script>
-        <script src="./assets/js/vertical-menu.js"></script>
-        <script src="./assets/js/feed.js"></script>
-        <script src="./assets/js/userAdmin.js"></script>
-        <script src="assets/js/cute-alert.js"></script>
+        <!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+<script src="../dependencies/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../dependencies/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../dependencies/node_modules/toastr/build/toastr.min.js"></script>
+<script src="./assets/js/vertical-menu.js"></script>
+<script src="./assets/js/feed.js"></script>
+<script src="./assets/js/userAdmin.js"></script>
+<script src="assets/js/cute-alert.js"></script>
     </body>
 
     </html>

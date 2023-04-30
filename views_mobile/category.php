@@ -97,6 +97,15 @@ if (isset($_GET['adcategory'])) {
                 window.flutter_inappwebview.callHandler('getPageTitles', 1, true, pageTitle)
             });
         </script>
+             <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+         <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 
 <body>
@@ -595,6 +604,8 @@ if (isset($_GET['adcategory'])) {
       return vars.indexOf(dataValue);
     } */
   </script>
+   <!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 </body>
 
 </html>

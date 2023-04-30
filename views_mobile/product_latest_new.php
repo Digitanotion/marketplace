@@ -145,6 +145,15 @@ $newToken = $securityManager_ob->setCSRF();
   <meta property="og:type" content="Classified Store" />
   <meta property="og:url" content="product.php?adID=<?php echo $adID; ?>" />
   <meta property="og:site_name" content="Gaijinmall" />
+  <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+    <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 
 <body class="bg-light-blue">
@@ -576,7 +585,8 @@ $newToken = $securityManager_ob->setCSRF();
 
     // Navigate to make offer view in mobile
   </script>
-
+<!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 </body>
 
 </html>

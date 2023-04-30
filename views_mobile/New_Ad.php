@@ -118,6 +118,15 @@ $newToken = $securityManager_ob->setCSRF();
                 window.flutter_inappwebview.callHandler('getPageTitles', 1, true, pageTitle)
             });
         </script>
+    <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+         <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
    
 </head>
 
@@ -542,7 +551,8 @@ $newToken = $securityManager_ob->setCSRF();
         $('.saleDetail').find('div').eq(2).append(finalElement);
       });
     </script>
-
+<!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 </body>
 
 </html>

@@ -81,7 +81,15 @@ $newToken=$securityManager_ob->setCSRF();
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="assets/css/signin.css">
     <link rel="stylesheet" href="assets/css/cute-alert.css">
-    
+    <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+         <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 
 <body>
@@ -245,6 +253,8 @@ $newToken=$securityManager_ob->setCSRF();
         ?>
     });
     </script>
+    <!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 </body>
 
 </html>

@@ -73,6 +73,15 @@ if (isset($_GET['view_business'])) {
   <link rel="stylesheet" href="./assets/css/adverts.css" />
   <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/css/all.css" />
   <link rel="stylesheet" href="assets/css/messages.css" />
+  <!-- google translator  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+        }
+    </script>
+         <!-- google translator  -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 
 <body>
@@ -189,6 +198,8 @@ if (isset($_GET['view_business'])) {
     </div>
   </section>
   <?php include "footer.php"; ?>
+  <!-- translation -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
   <script src="../dependencies/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../dependencies/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../dependencies/node_modules/toastr/build/toastr.min.js"></script>
